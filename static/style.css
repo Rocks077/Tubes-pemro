@@ -1,0 +1,169 @@
+/* --- RESET & DASAR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #121212; /* Latar gelap monitor medis */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border-bottom: 2px solid #2ecc71; /* Aksen hijau EKG */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #2ecc71;
+}
+
+/* --- CONTAINER UTAMA --- */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #00ff41;
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* --- KARTU & FORM --- */
+.card {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    margin-bottom: 30px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #121212;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    background: #2ecc71;
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #27ae60;
+    transform: scale(1.02);
+}
+
+/* --- INFO PANEL & STATS --- */
+.info-panel {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #e74c3c; /* Merah untuk detak jantung */
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* --- GRAFIK --- */
+canvas {
+    background: #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* --- TABEL HISTORY --- */
+.history-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #2ecc71;
+    color: #121212;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+tr:hover {
+    background-color: #252525;
+}
+
+/* --- ALERT MESSAGES (Flash) --- */
+.alert {
+    padding: 15px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    .info-panel {
+        flex-direction: column;
+    }
+}

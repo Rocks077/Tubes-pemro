@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - EKG Monitoring</title>
+    <!-- Menghubungkan ke file CSS yang sama agar tampilan seragam -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigasi yang sama dengan halaman lainnya -->
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+
+    <div class="container">
+        <h1>Tentang Proyek EKG</h1>
+        
+        <div class="card" style="text-align: left;">
+            <p>Proyek ini dirancang untuk memantau sinyal listrik jantung (Elektrokardiogram) secara real-time menggunakan teknologi IoT.</p>
+            
+            <h3 style="margin-top: 20px; color: #2ecc71;">Cara Kerja:</h3>
+            <ol style="margin-left: 20px; color: #888; line-height: 2;">
+                <li><strong>Sensor EKG:</strong> Menangkap sinyal listrik dari tubuh.</li>
+                <li><strong>ESP32:</strong> Memproses sinyal analog menjadi data digital.</li>
+                <li><strong>Flask Server:</strong> Menerima data melalui internet dan menyimpannya ke database.</li>
+                <li><strong>Web Dashboard:</strong> Menampilkan grafik jantung yang bisa diakses di mana saja.</li>
+            </ol>
+        </div>
+
+        <div class="card" style="background: #252525; border-left: 5px solid #3498db;">
+            <h3>Teknologi yang Digunakan:</h3>
+            <p style="color: #3498db; font-weight: bold; margin-top: 10px;">
+                Python (Flask) • HTML • CSS • ESP32
+            </p>
+        </div>
+    </div>
+
+    <footer style="text-align: center; color: #555; margin-top: 50px; font-size: 0.8rem;">
+        <p>2026 EKG Project.</p>
+    </footer>
+
+</body>
+</html>
